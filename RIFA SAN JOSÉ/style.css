@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  /* Fondo con degradado Verde Oscuro (Institucional) */
+  background: linear-gradient(135deg, #0b4d1e 0%, #1a7a34 100%);
+  min-height: 100vh;
+  padding: 30px 15px;
+  color: #333;
+}
+
+.container {
+  max-width: 850px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+  border-top: 10px solid #ffcc00; /* Línea Amarilla superior */
+  border-bottom: 10px solid #cc0000; /* Línea Roja inferior */
+}
+
+/* Estilo para el Escudo */
+.escudo {
+  width: 130px;
+  height: auto;
+  display: block;
+  margin: 0 auto 15px auto;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
+}
+
+header {
+  text-align: center;
+  padding-bottom: 20px;
+  margin-bottom: 25px;
+  border-bottom: 2px dashed #ddd;
+}
+
+header h1 {
+  font-size: 2.2em;
+  color: #0b4d1e; /* Verde oscuro para el título */
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+header p {
+  font-size: 1.05em;
+  margin: 8px 0;
+  color: #555;
+}
+
+header p strong {
+  color: #cc0000; /* Rojo para resaltar los datos */
+  font-weight: 600;
+}
+
+/* Cuadro de información de pago */
+.info-pago {
+  background: #fffbe6; /* Fondo amarillo muy claro */
+  border-left: 6px solid #ffcc00; /* Borde amarillo */
+  padding: 15px 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 0.95em;
+  color: #444;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.info-pago strong {
+  color: #0b4d1e; /* Verde oscuro para el número de Nequi */
+  font-size: 1.1em;
+}
+
+/* Cuadrícula de números */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(65px, 1fr));
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.numero {
+  /* Números disponibles en Amarillo Institucional */
+  background: linear-gradient(145deg, #ffcc00, #e6b800);
+  color: #0b4d1e; /* Texto verde oscuro para que contraste */
+  padding: 18px 0;
+  text-align: center;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.1em;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  user-select: none;
+  border: 2px solid #e6b800;
+}
+
+.numero:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 8px 15px rgba(255, 204, 0, 0.5);
+  background: linear-gradient(145deg, #e6b800, #cca300);
+}
+
+.numero.ocupado {
+  /* Números ocupados en Rojo Institucional */
+  background: linear-gradient(145deg, #cc0000, #990000);
+  border-color: #990000;
+  color: white;
+  cursor: not-allowed;
+  opacity: 0.85;
+  box-shadow: none;
+  transform: none;
+}
+
+.numero.ocupado:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+/* Ventana Modal (Emergente) */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(11, 77, 30, 0.8); /* Fondo verde oscuro transparente */
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal.oculto {
+  display: none;
+}
+
+.modal-content {
+  background: white;
+  padding: 35px 25px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 420px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  border-top: 8px solid #ffcc00;
+  animation: aparecer 0.3s ease-out;
+}
+
+@keyframes aparecer {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.modal-content h2 {
+  color: #0b4d1e;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+.modal-content p {
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.modal-content p strong {
+  color: #cc0000;
+  font-size: 1.3em;
+  display: block;
+  margin-top: 5px;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 14px;
+  margin: 8px 0;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+  transition: border-color 0.3s;
+}
+
+.modal-content input:focus {
+  outline: none;
+  border-color: #0b4d1e; /* Borde verde al escribir */
+}
+
+.modal-content button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+  transition: all 0.3s;
+}
+
+#btn-confirmar {
+  background: linear-gradient(145deg, #0b4d1e, #1a7a34); /* Botón Verde */
+  color: white;
+}
+
+#btn-confirmar:hover {
+  background: linear-gradient(145deg, #1a7a34, #0b4d1e);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(11, 77, 30, 0.4);
+}
+
+.btn-cancelar {
+  background: #ecf0f1;
+  color: #7f8c8d;
+}
+
+.btn-cancelar:hover {
+  background: #bdc3c7;
+  color: #333;
+}
