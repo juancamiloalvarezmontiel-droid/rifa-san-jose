@@ -1,4 +1,33 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+/* Estilo para el mensaje de rifa finalizada */
+.mensaje-final {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.mensaje-final h1 {
+    font-size: 2.5em;
+    color: #cc0000; /* Rojo institucional */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.mensaje-final p {
+    font-size: 1.2em;
+    color: #555;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.mensaje-final p strong {
+    color: #0b4d1e; /* Verde institucional */
+    font-size: 1.3em;
+}
+
+
+
+<!--@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -229,7 +258,7 @@ header p strong {
 .btn-cancelar {
   background: #ecf0f1;
   color: #7f8c8d;
-}
+}-->
 
 .btn-cancelar:hover {
   background: #bdc3c7;
