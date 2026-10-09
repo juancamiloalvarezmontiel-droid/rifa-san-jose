@@ -8,7 +8,6 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    /* Fondo con degradado Verde Oscuro (Institucional) */
     background: linear-gradient(135deg, #0b4d1e 0%, #1a7a34 100%);
     min-height: 100vh;
     padding: 30px 15px;
@@ -22,8 +21,8 @@ body {
     padding: 30px;
     border-radius: 20px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
-    border-top: 10px solid #ffcc00; /* Línea Amarilla superior */
-    border-bottom: 10px solid #cc0000; /* Línea Roja inferior */
+    border-top: 10px solid #ffcc00;
+    border-bottom: 10px solid #cc0000;
 }
 
 /* Estilo para el Escudo */
@@ -44,7 +43,7 @@ header {
 
 header h1 {
     font-size: 2.2em;
-    color: #0b4d1e; /* Verde oscuro para el título */
+    color: #0b4d1e;
     margin-bottom: 15px;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -58,14 +57,14 @@ header p {
 }
 
 header p strong {
-    color: #cc0000; /* Rojo para resaltar los datos */
+    color: #cc0000;
     font-weight: 600;
 }
 
 /* Cuadro de información de pago */
 .info-pago {
-    background: #fffbe6; /* Fondo amarillo muy claro */
-    border-left: 6px solid #ffcc00; /* Borde amarillo */
+    background: #fffbe6;
+    border-left: 6px solid #ffcc00;
     padding: 15px 20px;
     border-radius: 10px;
     text-align: center;
@@ -76,7 +75,7 @@ header p strong {
 }
 
 .info-pago strong {
-    color: #0b4d1e; /* Verde oscuro para el número de Nequi */
+    color: #0b4d1e;
     font-size: 1.1em;
 }
 
@@ -89,9 +88,8 @@ header p strong {
 }
 
 .numero {
-    /* Números disponibles en Amarillo Institucional */
     background: linear-gradient(145deg, #ffcc00, #e6b800);
-    color: #0b4d1e; /* Texto verde oscuro para que contraste */
+    color: #0b4d1e;
     padding: 18px 0;
     text-align: center;
     border-radius: 12px;
@@ -111,7 +109,6 @@ header p strong {
 }
 
 .numero.ocupado {
-    /* Números ocupados en Rojo Institucional */
     background: linear-gradient(145deg, #cc0000, #990000);
     border-color: #990000;
     color: white;
@@ -131,7 +128,7 @@ header p strong {
     position: fixed; 
     top: 0; left: 0; 
     width: 100%; height: 100%;
-    background: rgba(11, 77, 30, 0.8); /* Fondo verde oscuro transparente */
+    background: rgba(11, 77, 30, 0.8);
     backdrop-filter: blur(4px);
     display: flex; 
     justify-content: center; 
@@ -191,7 +188,7 @@ header p strong {
 
 .modal-content input:focus {
     outline: none;
-    border-color: #0b4d1e; /* Borde verde al escribir */
+    border-color: #0b4d1e;
 }
 
 .modal-content button {
@@ -208,7 +205,7 @@ header p strong {
 }
 
 #btn-confirmar { 
-    background: linear-gradient(145deg, #0b4d1e, #1a7a34); /* Botón Verde */
+    background: linear-gradient(145deg, #0b4d1e, #1a7a34);
     color: white; 
 }
 
@@ -238,7 +235,7 @@ header p strong {
 
 .mensaje-final h1 {
     font-size: 2.5em;
-    color: #cc0000; /* Rojo institucional */
+    color: #cc0000;
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -253,6 +250,6 @@ header p strong {
 }
 
 .mensaje-final p strong {
-    color: #0b4d1e; /* Verde institucional */
+    color: #0b4d1e;
     font-size: 1.3em;
 }
